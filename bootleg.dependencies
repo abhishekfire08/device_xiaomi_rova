@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+    "repository": "abhishekhembrom08/kernel_xiaomi_rova",
+    "target_path": "kernel/xiaomi/rova",
+    "branch": "12.1"
+  },
+  {
+    "remote": "github",
+    "repository": "abhishekhembrom08/vendor_xiaomi_rova",
+    "target_path": "vendor/xiaomi/rova",
+    "branch": "12.1"
+  }
+]
