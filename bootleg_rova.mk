@@ -34,7 +34,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Maintainer Prop
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.bootleggers.maintainer=Abhishek08 and Warrior
+    ro.bootleggers.maintainer=abhishekhembrom08
 BOOTLEGGERS_BUILD_TYPE := Shishufied
 TARGET_BOOTLEG_ARCH := arm64
 WITH_GAPPS := false
