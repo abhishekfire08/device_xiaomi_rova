@@ -11,18 +11,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 
 # Inherit some common Nusantara stuff.
 TARGET_BOOT_ANIMATION_RES := 720
-NAD_BUILD_TYPE := OFFICIAL
+#NAD_BUILD_TYPE := OFFICIAL
 USE_PIXEL_CHARGING := true
 TARGET_SUPPORT_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Inherit from rova device
 $(call inherit-product, device/xiaomi/rova/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := nad_rova
+PRODUCT_NAME := bootleg_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
@@ -30,3 +30,11 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+
+# Maintainer Prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.bootleggers.maintainer=Abhishek08 and Warrior
+BOOTLEGGERS_BUILD_TYPE := Shishufied
+TARGET_BOOTLEG_ARCH := arm64
+WITH_GAPPS := false
