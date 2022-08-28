@@ -15,14 +15,14 @@ TARGET_BOOT_ANIMATION_RES := 720
 USE_PIXEL_CHARGING := true
 TARGET_SUPPORT_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit from rova device
 $(call inherit-product, device/xiaomi/rova/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := bootleg_rova
+PRODUCT_NAME := havoc_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
@@ -33,8 +33,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 
 # Maintainer Prop
-PRODUCT_PROPERTY_OVERRIDES += \
+#PRODUCT_PROPERTY_OVERRIDES += \
     ro.bootleggers.maintainer=abhishekhembrom08
-BOOTLEGGERS_BUILD_TYPE := Shishufied
-TARGET_BOOTLEG_ARCH := arm64
+#BOOTLEGGERS_BUILD_TYPE := Shishufied
+#TARGET_BOOTLEG_ARCH := arm64
 WITH_GAPPS := false
