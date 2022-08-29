@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_rova.mk
+    $(LOCAL_DIR)/aicp_rova.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_rova-user \
-    havoc_rova-userdebug \
-    havoc_rova-eng
+    aicp_rova-user \
+    aicp_rova-userdebug \
+    aicp_rova-eng
