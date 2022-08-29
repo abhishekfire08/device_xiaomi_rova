@@ -40,6 +40,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 #WITH_GAPPS := true
 
 
- AICP Device Maintainers
+# AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Abhishek Hembrom (xyz_abhishek), Raunak Singh (Warrior)"
