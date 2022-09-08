@@ -355,6 +355,10 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.bt.sh \
