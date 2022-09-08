@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -30,15 +30,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-
-# Maintainer Prop
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    ro.bootleggers.maintainer=abhishekhembrom08
-#BOOTLEGGERS_BUILD_TYPE := Shishufied
-#TARGET_BOOTLEG_ARCH := arm64
-#WITH_GAPPS := true
-
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
