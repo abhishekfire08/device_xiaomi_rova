@@ -11,6 +11,9 @@ dalvik.vm.image-dex2oat-cpu-set=0,1,2,3
 dalvik.vm.image-dex2oat-filter=speed-profile
 dalvik.vm.image-dex2oat-threads=4
 
+# Blurs
+ro.surface_flinger.supports_background_blur=0
+
 # Display
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
