@@ -1,7 +1,7 @@
 [
   {
     "remote": "github",
-    "repository": "abhishekhembrom08/kernel_xiaomi_rova",
+    "repository": "ItoRenz-Build/kernel_xiaomi_msm8937",
     "target_path": "kernel/xiaomi/rova",
     "branch": "12.1"
   },
