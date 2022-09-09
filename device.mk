@@ -217,7 +217,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.xiaomi_msm8937
+    android.hardware.light-V1-ndk_platform
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
