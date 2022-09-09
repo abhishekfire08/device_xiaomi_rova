@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_rova.mk
+    $(LOCAL_DIR)/arrow_rova.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_rova-user \
-    aicp_rova-userdebug \
-    aicp_rova-eng
+    arrow_rova-user \
+    arrow_rova-userdebug \
+    arrow_rova-eng
