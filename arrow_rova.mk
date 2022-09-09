@@ -9,20 +9,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit some common Nusantara stuff.
+# Boot Animation
 TARGET_BOOT_ANIMATION_RES := 720
-#NAD_BUILD_TYPE := OFFICIAL
-USE_PIXEL_CHARGING := true
-TARGET_SUPPORT_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+
+# Inherit some common ArrowOS stuff
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit from rova device
 $(call inherit-product, device/xiaomi/rova/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := aicp_rova
+PRODUCT_NAME := arrow_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
@@ -31,6 +29,6 @@ TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
+# ArrowOS
+DEVICE_MAINTAINER := xyz_abhishek
     DEVICE_MAINTAINERS="xyz_abhishek"
