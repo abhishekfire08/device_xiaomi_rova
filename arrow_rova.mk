@@ -31,4 +31,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # ArrowOS
 DEVICE_MAINTAINER := xyz_abhishek
-    DEVICE_MAINTAINERS="xyz_abhishek"
