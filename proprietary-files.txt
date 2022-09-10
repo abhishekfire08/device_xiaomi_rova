@@ -839,6 +839,10 @@ product/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
+# libtinyxml.so - from Prebuilt
+vendor/lib/libtinyxml.so|6d25006817df068adc3fba66b644b340107fb045
+vendor/lib64/libtinyxml.so|15b791b2c8b7da031de8db2f9d0721b9084f27a8
+
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8953.so:vendor/lib/hw/sound_trigger.primary.msm8937.so
 vendor/lib/libadpcmdec.so
