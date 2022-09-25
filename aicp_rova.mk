@@ -32,12 +32,15 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 
-# Maintainer Prop
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    ro.bootleggers.maintainer=abhishekhembrom08
-#BOOTLEGGERS_BUILD_TYPE := Shishufied
-#TARGET_BOOTLEG_ARCH := arm64
-#WITH_GAPPS := true
+# Fingerprint
+BUILD_FINGERPRINT := google/redfin/redfin:12/SQ3A.220605.009.A1/8643238:user/release-keys
+BUILD_DESCRIPTION := redfin-user 12 SQ3A.220605.009.A1 8643238 release-keys
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="$(BUILD_DESCRIPTION)"
 
 
 # AICP Device Maintainers
