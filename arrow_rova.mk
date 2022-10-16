@@ -13,14 +13,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit some common evolution stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Inherit from rova device
 $(call inherit-product, device/xiaomi/rova/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := aosp_rova
+PRODUCT_NAME := arrow_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
@@ -29,9 +29,5 @@ TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# PixelExperience specifics
-TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_USES_AOSP_RECOVERY := true
-TARGET_SUPPORTS_QUICK_TAP := true
+# ArrowOS additions
+DEVICE_MAINTAINER := xyz_abhishek
