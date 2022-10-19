@@ -181,7 +181,7 @@ VENDOR_SECURITY_PATCH := 2018-07-01
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BUILD_BROKEN_TREBLE_SYSPROP_NEVERALLOW := true
 
 # Treble
