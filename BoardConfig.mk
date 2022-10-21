@@ -124,8 +124,10 @@ TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := clang-r450784d
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r450784d
-TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 \
-    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+
+# Additional Kernel Flags
+TARGET_KERNEL_ADDITIONAL_FLAGS +=
+HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" LLVM=1 LLVM_IAS=1
 
 # Media
 USE_DEVICE_SPECIFIC_MEDIA := true
