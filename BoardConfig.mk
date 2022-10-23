@@ -122,9 +122,8 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/rova
 TARGET_KERNEL_CONFIG := mi8937_defconfig
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
-ifneq ($(wildcard vendor/qcom/proprietary/llvm-arm-toolchain-ship/10.0),)
-TARGET_KERNEL_CLANG_PATH := $(PWD)/vendor/qcom/proprietary/llvm-arm-toolchain-ship/10.0
-endif
+TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton-clang
 TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Additional Kernel Flags
@@ -185,7 +184,7 @@ VENDOR_SECURITY_PATCH := 2018-07-01
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BUILD_BROKEN_TREBLE_SYSPROP_NEVERALLOW := true
 
 # Treble
