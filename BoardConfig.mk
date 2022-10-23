@@ -122,9 +122,6 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/rova
 TARGET_KERNEL_CONFIG := mi8937_defconfig
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
-ifneq ($(wildcard vendor/qcom/proprietary/llvm-arm-toolchain-ship/10.0),)
-TARGET_KERNEL_CLANG_PATH := $(PWD)/vendor/qcom/proprietary/llvm-arm-toolchain-ship/10.0
-endif
 TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Additional Kernel Flags
