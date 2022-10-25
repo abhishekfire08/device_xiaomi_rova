@@ -13,14 +13,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit some common evolution stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Inherit from rova device
 $(call inherit-product, device/xiaomi/rova/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := arrow_rova
+PRODUCT_NAME := superior_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
