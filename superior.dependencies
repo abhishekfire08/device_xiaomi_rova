@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+    "repository": "iusmac/kernel_rova",
+    "target_path": "kernel/xiaomi/rova",
+    "branch": "13-dev"
+  },
+  {
+    "remote": "github",
+    "repository": "iusmac/vendor_rova",
+    "target_path": "vendor/xiaomi/rova",
+    "branch": "13-dev"
+  }
+]

@@ -29,5 +29,7 @@ TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# ArrowOS additions
-DEVICE_MAINTAINER := xyz_abhishek
+#SuperioeOS Stuff
+SUPERIOR_OFFICIAL := false
+SUPERIOR_GAPPS := minimal
+TARGET_GAPPS_ARCH := arm64
