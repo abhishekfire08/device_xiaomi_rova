@@ -122,7 +122,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/rova
 TARGET_KERNEL_CONFIG := mi8937_defconfig
 TARGET_KERNEL_VERSION := 4.9
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := sdllvm
+TARGET_KERNEL_CLANG_VERSION := clang-r450784d
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
