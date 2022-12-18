@@ -1,15 +1,13 @@
 [
     {
-        "remote": "github",
-        "repository": "iusmac/kernel_rova",
-        "target_path": "kernel/xiaomi/rova",
-        "branch": "13-dev"
+        "repository": "vendor_xiaomi_rova",
+        "target_path": "vendor/xiaomi/rova",
+        "branch": "thirteen"
     },
     {
-        "remote": "github",
-        "repository": "iusmac/vendor_rova",
-        "target_path": "vendor/xiaomi/rova",
-        "branch": "13-dev"
+        "repository": "kernel_xiaomi_rova",
+        "target_path": "kernel/xiaomi/rova",
+        "branch": "thirteen"
     },
     {
         "remote": "github",
@@ -18,9 +16,9 @@
         "branch": "lineage-20.0"
     },
     {
-        "remote": "github"
         "repository": "kdrag0n/proton-clang",
         "target_path": "prebuilts/clang/host/linux-x86/proton-clang",
         "branch": "master",
+        "remote": "github"
     }
 ]

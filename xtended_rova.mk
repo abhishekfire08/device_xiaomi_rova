@@ -13,14 +13,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Inherit some common evolution stuff
-$(call inherit-product, vendor/superior/config/common.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Inherit from rova device
 $(call inherit-product, device/xiaomi/rova/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rova
-PRODUCT_NAME := superior_rova
+PRODUCT_NAME := xtended_rova
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4A / 5A
@@ -29,7 +29,11 @@ TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-#SuperioeOS Stuff
-SUPERIOR_OFFICIAL := false
-SUPERIOR_GAPPS := minimal
-TARGET_GAPPS_ARCH := arm64
+# Xtended Stuffs
+XTENDED_BUILD_MAINTAINER := xyz_abhishek
+XTENDED_BUILD_TYPE := UNOFFICIAL
+WITH_GAPPS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_BLUR := false
+TARGET_SHIP_GCAM_GO := true

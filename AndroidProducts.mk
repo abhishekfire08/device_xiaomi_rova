@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_rova.mk
+    $(LOCAL_DIR)/xtended_rova.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_rova-user \
-    superior_rova-userdebug \
-    superior_rova-eng
+    xtended_rova-user \
+    xtended_rova-userdebug \
+    xtended_rova-eng
