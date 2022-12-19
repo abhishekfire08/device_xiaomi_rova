@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_rova.mk
+    $(LOCAL_DIR)/xtended_rova.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_rova-user \
-    arrow_rova-userdebug \
-    arrow_rova-eng
+    xtended_rova-user \
+    xtended_rova-userdebug \
+    xtended_rova-eng
